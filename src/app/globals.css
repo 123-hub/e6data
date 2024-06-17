@@ -31,3 +31,27 @@ body {
     text-wrap: balance;
   }
 }
+body, html, #__next {
+  height: 100%;
+}
+
+
+Custom scrollbar styles
+.scrollbar-custom {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 #fff; /* For Firefox */
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 12px; /* Custom width for WebKit browsers */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #fff; /* Track color */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #888; /* Thumb color */
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid #fff; /* Padding around thumb */
+}
